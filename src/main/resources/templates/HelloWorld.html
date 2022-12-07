@@ -2,9 +2,22 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
+<link th:href="@{/css/title.css}" rel="stylesheet" >
+<script type="text/javascript" src="/js/header.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
 	<p th:text="${data}">여기는 아무것도 안찍힌다.</p>
+	<div class="high">하하하</div>
+	<img th:src="@{/img/toto.jpg}">
+	<img src="img/toto.jpg">
+	<form th:action="@{/joinOk}">
+	
+		<div>@{/}문법을 안써도 잘 나오네요.</div>
+		
+		
+		
+	</form>
+	
 </body>
 </html>
